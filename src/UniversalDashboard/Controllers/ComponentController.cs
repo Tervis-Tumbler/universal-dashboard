@@ -284,7 +284,7 @@ namespace UniversalDashboard.Controllers
 
 
         [HttpGet]
-		[Route("/api/{*parts}")]
+		[Route("/{*parts}")]
 		[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 		public IActionResult GetEndpoint()
 		{
@@ -307,7 +307,7 @@ namespace UniversalDashboard.Controllers
 		}
 
 		[HttpDelete]
-		[Route("/api/{*parts}")]
+		[Route("/{*parts}")]
 		[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 		public IActionResult DeleteEndpoint()
 		{
@@ -365,7 +365,7 @@ namespace UniversalDashboard.Controllers
         }
 
 		[HttpPost]
-		[Route("/api/{*parts}")]
+		[Route("/{*parts}")]
 		[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 		public async Task<IActionResult> PostEndpoint()
 		{
@@ -396,7 +396,7 @@ namespace UniversalDashboard.Controllers
 		}
 
 		[HttpPut]
-		[Route("/api/{*parts}")]
+		[Route("/{*parts}")]
 		[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 		public async Task<IActionResult> PutEndpoint()
 		{
